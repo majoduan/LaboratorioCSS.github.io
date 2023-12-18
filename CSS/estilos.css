@@ -1,0 +1,414 @@
+ /* *{border: 1px solid #ff3300; }  */
+
+ body { /*que no aparezcan pequeños bordes en la pagina entera como tal*/
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+/*  ******** HEADER *********/
+#menu-spa {
+    height: 70px;    /*altura total de la franja superior o section*/
+    background: #a3a656;
+    display: flex;  /*pasar de columnas a filas sus elementos*/
+    justify-content: space-between; /*espacio entre cada elemento del contenedor*/
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+#menu-spa :hover {
+    color: #ffff00; /* Color del texto al pasar el mouse por encima */
+}
+
+#menu-spa ul {
+    list-style: none; /*Quitar los puntos de la lista*/
+    display: flex;
+    margin-left: 70px;  /*Empezar la lista con 70px desde la izquierda en el margin*/
+    padding-left: 0px;
+}
+
+#menu-spa ul li {
+    padding: 0px 15px;      /*0 de arriba y abajo y 15 entre cada*/
+}
+
+#menu-spa ul li a {
+    text-decoration: none;      /*quita el subrayado de los links*/
+    color: #000;
+    /* font-family: 'Inter', sans-serif; */
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#user-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;   /* Separacion horizontal*/
+    margin-left: 490px;
+    color: #000;
+    float: right;
+}
+
+.usuario-icon {
+    font-size: 50px;    /*tamaño de icono*/
+}
+
+#idioma-container {
+    display: flex;  /*pasar de columnas a filas*/
+    align-items: center;
+    cursor: pointer;
+    float: right;
+    gap: 10px;
+}
+
+.codigo-de-lenguaje {
+    font-size: 1rem;
+    color: #333;
+}
+
+.bandera-icon {
+    width: 50px;
+    align-items: center;
+}
+
+
+/*  ******** MAIN ********  */
+
+#portada-spa{
+    height: 635px;     /*Ajusta el largo del contenedor al largo de la imagen*/
+    background-image: url(../img/portada.png);
+    background-repeat: no-repeat;
+    background-size: cover;   /* "cover" Ajusta la imagen
+     completamente dentro del contenedor recortando la imagen si las proporciones no coinciden*/
+     /*  background-size:contain; deja espacios vacios */
+}
+
+#portada-spa img{
+    /*Ajuste automatico*/
+    width: 100%;
+    height: auto;    
+}
+
+.texto-portada-spa{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    font-weight: normal;
+    color: #000;
+}
+
+.texto-portada-spa h1 {
+    font-family: 'mifuente';
+    font-weight: normal;
+    font-size: 96px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+@font-face {
+    font-family:'mifuente';
+    src: url(../font/Romanesco-Regular.ttf);
+}
+
+/*  *** Fuente:Titulo 2 ***  */
+.texto-portada-spa p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;   /*Es igual a poner SemiBold*/
+    font-size: 32px;
+    margin: 0;
+    /* padding-right: 20px;
+    margin-right: 20px; */
+}
+
+/*  ******** Barras buscadoras  ********    */
+#menu-buscador {
+    height: 100px;
+    background: #f2f6f6;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+#bloque-reservar-cita {
+    margin-left: 350px;
+    gap: 8px;
+}
+
+#reserva-tu-cita {
+    height: 60px;   /*altura del cuadro de busqueda*/
+    width: 250px;
+    border-radius: 10px 10px 10px 10px;     /*tamaño de curvatura de las esquinas*/
+    margin-left: 30px;      /*espacio entre afuera y filo izquierdo*/
+    margin-top: 10px;       /*espacio entre afuera y filo superior*/
+    border: 1px;    /*Hace que el borde sea transparante*/
+}
+
+#bloque-código-promocional {
+    margin-left: 35px;
+}
+
+#codigo-promocial {
+    height: 60px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    border: 1px;    /*Hace que el borde sea transparante*/
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: #9e9a9a;
+}
+
+#masajes article image {
+    border-radius: 25%;
+}
+
+/*  *******  Seccion Tipos de Masajes  ******** */
+#masajes {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 134px;
+    justify-content: center;
+    margin-top: 0px;
+    border: 0; 
+}
+
+#masajes article {
+    width: 350px;
+}
+
+.titulo-masaje {
+    background: #A3A656;
+    width: 500px;   /*Ancho*/
+    border-radius: 15px 15px 0px 0px;
+    margin: 0;
+    border: 0;
+    padding: 20px;
+    padding-top: 25px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    white-space: nowrap;
+}
+
+.titulo-masaje {
+    background: #A3A656;
+    width: 300px;   /*Ancho*/
+    border-radius: 15px 15px 0 0;
+    margin: 0;
+    border: 0;
+    padding: 20px;
+    padding-top: 25px;
+    margin-top: 100px;
+    gap: 134px;
+    color: #ffff;
+}
+
+#masajes article img {
+    width: 350px;   /*Ancho*/
+    height: auto; 
+    border: 0;
+}
+
+.titulo-masaje {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    margin-left: 0px;
+    white-space: nowrap;
+    font-size: 32px;
+    width: 310px;     /*Filo de la barra del titulo*/
+    font-weight: 600;
+}
+
+.descripcion {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* 100 a la izquierda */
+.contenedor-costo-reserva {
+    align-content: center;
+}
+
+.costo {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    float: left;
+    border: 0;
+    font-weight: 600;
+    margin-left: 15px;
+}
+
+.boton-reservar {
+    border: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;   /*Es igual a poner SemiBold*/
+    border-radius: 35px;
+    float: right;
+    text-transform: uppercase;
+    background: #A3A656;
+    color: #ffff;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.boton-reservar:hover {
+    background: #384001; /* Color del fondo al pasar el mouse por encima */
+}
+
+#contenedor-planes-spa {
+    background: #f2f6f6 ;
+    height: 770px;
+}
+
+#contenedor-planes-spa h2 {
+    padding-top: 35px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    align-items: center;    /*alinea en el centro de la fila*/
+    justify-content: center;        /*En el centro de caja (para cuando se use flex)*/
+    display: flex;      /*Pasar de columna a fila*/
+}
+
+#contenedor-planes-spa div article h3 {
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 600;   /*regular o normal*/
+    display: flex;
+    justify-content: center;
+}
+
+#planes {
+    display: flex;
+    gap: 140px;
+    justify-content: center;
+    justify-content: center;
+    
+}
+
+#planes article img {
+    display: flex;
+    justify-content: center;    /*Alinea en el eje princpial*/
+    align-items: center;        /*Alinea en el eje perpendicular*/
+    /* align-self: center;  */   /*Alinea un objeto individual dentro de su contenedor sin compararo con otros */
+      gap: 350px;
+      margin-left: 65px;
+      margin-top: 55px;
+}
+
+.borde {
+    width: 255px;
+    height: 255px;
+    border: 11px solid hsl(68, 97%, 13%);   
+    border-radius:50% ;
+    text-align: center; /* Centra horizontalmente el contenido del contenedor */
+    line-height: 0; /* Ajusta el line-height para alinear verticalmente la imagen */
+    background: #fff;
+}
+
+.boton-ver-condiciones {
+    border: 10px;
+    height: 25px;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 600;   /*Es igual a poner SemiBold*/
+    border-radius: 35px;
+    text-transform: uppercase;
+    background: #A3A656;
+    color: #ffff;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+ .boton-ver-condiciones:hover {
+    background: #384001;
+}
+
+#contenedor-planes-spa div article ul {
+    justify-content: center;
+    padding-left: 80px;
+    margin-top: 30px;
+}
+
+#contenedor-planes-spa div article ul li {
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 5px 0;
+}
+
+#pie-de-pagina {
+    height:97px;
+    background: #384001;
+    display: flex;
+}
+
+#pie-de-pagina :hover {
+    color: #ffff00;
+}
+
+#pie-de-pagina ul {
+    margin-top: 0;
+    margin-left: 70px;
+    padding-left: 0;
+    list-style: none;  /*Quita los puntos de las listas*/
+    display: flex;  /* a fila */
+    gap: 60px;  
+}
+
+#pie-de-pagina ul li {
+    margin: 40px 0;
+}
+
+#pie-de-pagina ul li a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #A3A656;
+}
+
+.texto-pie-de-pagina {
+    padding-left:0;
+    margin: 25px 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #A3A656;
+    text-align: center;
+}
+
+.redes-sociales {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 170px;
+    margin-right: 25px;
+    display: flex;
+    text-align: center;
+    line-height: 0; /* Ajusta el line-height para alinear verticalmente la imagen */
+    gap: 40px;
+}
+
+#pie-de-pagina div img {
+    width: 45px;
+    height: 45px;
+    line-height: 0; /* Ajusta el line-height para alinear verticalmente la imagen */
+}
+    
+
